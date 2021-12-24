@@ -24,14 +24,14 @@ namespace localNumbersInTheArray
                 Console.WriteLine("Вывод локального числа " + array[0]);
             }
 
-            for (int i = 0; i < array.Length - 2; i++)
+            for (int i = 1; i < array.Length - 2; i++)
             {
-                int j = i + 1;
-                if (array[j] > array[i])
+                //int j = i + 1;
+                if (array[i] > array[i - 1])
                 {
-                    if (array[j] > array[j + 1])
+                    if (array[i] > array[i + 1])
                     {
-                        Console.WriteLine("Вывод локального числа " + array[j]);
+                        Console.WriteLine("Вывод локального числа " + array[i]);
                     }
                 }
             }            
