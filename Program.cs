@@ -24,7 +24,7 @@ namespace localNumbersInTheArray
                 Console.WriteLine("Вывод локального числа " + array[0]);
             }
 
-            for (int i = 1; i < array.Length - 2; i++)
+            for (int i = 1; i < array.Length - 1; i++)
             {
                 //int j = i + 1;
                 if (array[i] > array[i - 1])
